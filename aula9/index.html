@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conhecendo o DOM</title>
+
+    <style>
+
+        body {
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+        }
+
+    </style>
 </head>
 <body>
+    <h1>Iniciando os estudos DOM
+        <p>aqui vai o resultado</p>
+        <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+        <div id="msg">clique em mim</div>
+    </h1>
     
+    <!--Selecionando elementos para navegar dentro do DOM. É possível aceesar por marca, id, nome, classe e seletor
+    
+    POR MARCA: getElementByTagname() cosegue selecionar mais de um objeto EX: head, body, p...
+    
+    POR ID: É usado o comando getElementById() esse comando seleciona o id
+    
+    POR NOME: É usado o comando getElementsByName() esse comando seleciona o name
+    
+    POR CLASSE: É usado o comando getElementsByClassName() esse comando seleciona o classes
+    
+    POR SELETOR : É usado o comando document.querySelector('div#msg') pra usar seletores css-->
+
+    <script>
+        //var corpo = window.document.body
+        //corpo.style.background = 'Black'
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(`está escrito assim:  ${p1.innerHTML}`)
+        //window.alert(p1.innerText)
+
+        //var d = window.document.getElementById('msg')
+        //d.style.background = 'Red'
+        
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'Black'
+    </script>
 </body>
 </html>

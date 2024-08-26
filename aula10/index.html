@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area {
+            font-size: 20pt;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--EVENTO DOM: Todo evento que pode ser feito com qualquer elemento. para disparar um evento é necessário uma função
+    
+        FUNÇÕES: É em conjunto de codigo que só vão ser executadas só quando o evento ocorrer
+        
+        BLOCO: Linhas de códigos usada na função. para ser executado faça dessa maneira. o bloco é nomeado com o nome function EX:
+        
+        function {
+        
+        }
+        
+        para a função funcionar é preciso dar um nome. geralmente o nome das funções são ações que podemos fazer ou seja funções de eventos ex:
+        
+        function ação() {
+        }
+        
+        dentro dos () é adicionado parametros-->
+
+    <div id="area" onclick="clicar()  " onmouseenter="entrar() " onmouseout="saiu()">
+        interaja...
+    </div>
+    
+
+    <script>
+        var a = window.document.getElementById('area')
+
+        function clicar() {
+            
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText =  'Entrou'
+        }
+
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+
+</body>
+</html>

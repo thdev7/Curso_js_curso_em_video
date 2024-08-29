@@ -1,0 +1,54 @@
+CONDIÇÕES ANINHADAS: é usada quando utilizamos uma composição composta detro de outra composição composta ex:
+
+var idade = 67
+console.log(`Você tem ${idade} anos`)
+if (idade < 16) {    se: a idade for menor que 16 nao vota
+    console.log(`Não vota`)
+} else if (idade < 18 || idade > 65) {   entao se: a idade for menor que 18 e maior que 16 OU: maior que 65 voto opicional
+    console.log(`Voto opicional`)
+} else {                                  entao toda idade maior de 18 e menor que 65 voto obrigatório
+    console.log('Voto obrigatório')
+}
+
+
+
+CONDIÇÃO MULTIPLA : É exercida utilizando o SWITCH, que é usado para dados pontuais ex dias, numeros... so funciona em numeros inteiros e strings
+
+
+
+var agora = new Date()
+var diasem = agora.getDay()
+
+switch(diasem) {
+    case 0:
+        console.log('Hoje é Domingo')
+        break
+
+    case 1:
+        console.log('Hoje é Segunda - Feira')
+        break
+
+    case 2:
+        console.log('Hoje é Terça - Feira')
+        break
+
+    case 3:
+        console.log('Hoje é Quarta - Feira')
+        break
+
+    case 4:
+        console.log('Hoje é Quinta - Feira')
+        break
+
+    case 5:
+        console.log('Hoje é Sexta - Feira')
+        break
+
+    case 6:
+        console.log('Hoje é Sábado')
+        break
+
+    default :
+
+        break
+   }

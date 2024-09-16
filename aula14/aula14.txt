@@ -1,0 +1,5 @@
+a estrutura for tem 3 partes : inicio, teste e incremento ex: 
+
+for (inicio; teste; incr) {
+    
+}

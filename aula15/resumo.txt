@@ -1,0 +1,59 @@
+VARIEVEIS COMPOSTAS / VETORES / ARRAYS
+
+DEFINIÇÃO : Variaveis compostas são nada mais que uma variavel com um espaço maior. Podendo guardar varios valores dentro dela EX:
+
+  var a = [ 0 , 1 , 2 ]
+
+
+ELEMENTOS : Um elemento de um vetor ele é um par que agrupa um espaço da memoria ou seja o bloco
+
+
+CONTEUDO: É o valor dentro do elemento
+
+
+INDICE OU CHAVE :É a numeração dentro da variavel ex: 0, 1 , 2 
+
+
+POSIÇÃO: Para saber uma determinada posição de um valor dentro da variavel use num[0] se voce quiser saber o conteudo da chave 0 EX:    num = [9, 8, ,7] console.log('num[0]) ele irá mostrar o valor 9
+
+
+TROCA E ADIÇÃO: Para subistituir um valor de uma determinada chave basta dar o seguinte comando :
+
+num[2] = 5   ele ira fazer a troca. é possivel utilizar o segunte codigo: num.push[7]. esse comando ele adiciona o valor na ultima chave. se antes tinha 4 chaves com esse comando ele adicionara o valor 7 na chave 5 ex: num = [0, 1, 5, 3, 7] 
+
+
+COMPRIMENTO DA ARRAY: para saber o comprimento usa-se o comando num.length
+
+
+ELEMENTOS EM ORDEM CRESCENTE: Use o comando: num.sort()
+
+
+PERCURSO PARA EXIBIÇÃO NOS VETORES: Para mostrar todas os elementos e o conteudo desses elementos usamos os laços com a estrutura for EX; tenho um vetor com 200 elementos para nao escrever console.log(num) 200 vezes utilizamos um laço ex:
+
+let numero =[0, 1, 2, 3, 4, 5]
+
+for(let posicao = 0; posicao < numero.length; pos++) {
+    console.log(`a posição ${posicao}` tem o valor de ${numero[posicao]})
+}funcionando no ambiente 2
+
+
+Tem um jeito mais simples de fazer usando o for ex:
+
+for(let pos in num)
+{
+    console.log(num[pos])
+}ambiente 3
+
+ou seja : para cada pos dentro de num escreva num[pos]
+
+
+BUSCAR VALORES DENTRO DE UM VETOR:
+
+exemplo, em um vetor com 10 chaves, o usuario deseja saber onde se encontra um determinado valor então é utilizado o seguinte codigo:
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  o usuario deseja saber em qual chave está o valor 7 
+
+let pos = num.indexOf(7)
+console.log(`o valor 7 esta na chave ${pos}`)
+
+ele vai retornar dizendo que o valor 7 se encontra na chave 6. quando o valor não existe ele retorna com -1

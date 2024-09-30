@@ -19,7 +19,7 @@ POSIÇÃO: Para saber uma determinada posição de um valor dentro da variavel u
 
 TROCA E ADIÇÃO: Para subistituir um valor de uma determinada chave basta dar o seguinte comando :
 
-num[2] = 5   ele ira fazer a troca. é possivel utilizar o segunte codigo: num.push[7]. esse comando ele adiciona o valor na ultima chave. se antes tinha 4 chaves com esse comando ele adicionara o valor 7 na chave 5 ex: num = [0, 1, 5, 3, 7] 
+num[2] = 5   ele ira fazer a troca. é possivel utilizar o segunte codigo: num.push[7]. esse comando ele adiciona o valor na ultima chave. se antes tinha 4 chaves com esse comando ele adicionara o valor 7 na chave 4 ex: num = [0, 1, 5, 3, 7] 
 
 
 COMPRIMENTO DA ARRAY: para saber o comprimento usa-se o comando num.length
@@ -36,7 +36,7 @@ for(let posicao = 0; posicao < numero.length; pos++) {
     console.log(`a posição ${posicao}` tem o valor de ${numero[posicao]})
 }funcionando no ambiente 2
 
-
+	
 Tem um jeito mais simples de fazer usando o for ex:
 
 for(let pos in num)
